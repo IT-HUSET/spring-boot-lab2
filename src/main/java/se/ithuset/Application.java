@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 //@ComponentScan
 //@EnableAutoConfiguration
 @SpringBootApplication
-public class Application  {
+public class Application {
 
     @Autowired
     private String helloMessage;
@@ -21,6 +21,13 @@ public class Application  {
         Application bean = context.getBean(Application.class);
         System.out.println(bean.helloMessage);
     }
+
+
+//    public static void main(String[] args) {
+//        SpringApplication app = new SpringApplication(Application.class);
+//        app.setShowBanner(false);
+//        app.run(args);
+//    }
 
     @Bean
     public String helloMessage() {

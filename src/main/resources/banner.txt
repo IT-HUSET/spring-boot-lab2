@@ -1,0 +1,6 @@
+******** Custom banner ********
+
+Här används Spring Boot ${spring-boot.version}
+
+
+*******************************
